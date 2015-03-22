@@ -41,6 +41,14 @@ The set of variables that were estimated and supplied with this data set are:
 - mean(): Mean value
 - std(): Standard deviation
 
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+- gravityMean
+- tBodyAccMean
+- tBodyAccJerkMean
+- tBodyGyroMean
+- tBodyGyroJerkMean
+
 The dataset originally from UCI HAR has been transformed to append the Subject (by ID number) and 
 the activity that the subject was performing for each measurement.  Each row in the dataset represents
 and single Subject/Activity combination along with the average values for each mean and std signal variable.  
