@@ -1,6 +1,3 @@
-setwd("C:\\Users\\Tym\\Documents\\Code\\DataScience\\Getting and Cleaning Data\\Course Project")
-library(Hmisc)
-library(plyr)
 library(reshape2)
 
 # Helpers
