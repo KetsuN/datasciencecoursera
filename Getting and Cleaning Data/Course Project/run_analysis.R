@@ -43,4 +43,4 @@ meanData[,2] <- replace(meanData[,2], meanData[,2]==6, "LAYING")
 # Transform into summary table
 meanMelt <- melt(meanData, id = c("Subject", "Activity"), measure.vars = grep("mean|std", colnames(mergeData), value = TRUE))
 meanMelt <- dcast(meanMelt, Subject + Activity ~ variable,mean)
-write.table(meanMelt, file = "finalData.txt", sep=' \t')
+write.table(meanMelt, file = "finalData.txt", sep=' \t', row.name=FALSE)
