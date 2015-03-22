@@ -16,39 +16,41 @@ fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag
 indicate frequency domain signals). 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.  All signals are included in
 
-- tBodyAcc-XYZ
-- tGravityAcc-XYZ
-- tBodyAccJerk-XYZ
-- tBodyGyro-XYZ
-- tBodyGyroJerk-XYZ
-- tBodyAccMag
-- tGravityAccMag
-- tBodyAccJerkMag
-- tBodyGyroMag
-- tBodyGyroJerkMag
-- fBodyAcc-XYZ
-- fBodyAccJerk-XYZ
-- fBodyGyro-XYZ
-- fBodyAccMag
-- fBodyAccJerkMag
-- fBodyGyroMag
-- fBodyGyroJerkMag
+- tBodyAcc-XYZ (number)
+- tGravityAcc-XYZ (number)
+- tBodyAccJerk-XYZ (number)
+- tBodyGyro-XYZ (number)
+- tBodyGyroJerk-XYZ (number)
+- tBodyAccMag (number)
+- tGravityAccMag (number)
+- tBodyAccJerkMag (number)
+- tBodyGyroMag (number)
+- tBodyGyroJerkMag (number)
+- fBodyAcc-XYZ (number)
+- fBodyAccJerk-XYZ (number)
+- fBodyGyro-XYZ (number)
+- fBodyAccMag (number)
+- fBodyAccJerkMag (number)
+- fBodyGyroMag (number)
+- fBodyGyroJerkMag (number)
 
 The set of variables that were estimated and supplied with this data set are: 
 
-- mean(): Mean value
-- std(): Standard deviation
+- mean(): Mean value (number)
+- std(): Standard deviation (number)
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-- gravityMean
-- tBodyAccMean
-- tBodyAccJerkMean
-- tBodyGyroMean
-- tBodyGyroJerkMean
+- gravityMean (number)
+- tBodyAccMean (number)
+- tBodyAccJerkMean (number)
+- tBodyGyroMean (number)
+- tBodyGyroJerkMean (number)
 
-The dataset originally from UCI HAR has been transformed to append the Subject (by ID number) and 
-the activity that the subject was performing for each measurement.  Each row in the dataset represents
-and single Subject/Activity combination along with the average values for each mean and std signal variable.  
+The dataset originally from UCI HAR has been transformed to append 
+- Subject (number) 
+- Activity performed by subject (string)
+
+Each row in the dataset represents a single Subject/Activity combination along with the average values for each mean and std signal variable.  
